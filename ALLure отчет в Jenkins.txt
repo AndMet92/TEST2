@@ -1,0 +1,119 @@
+Started by user Andrei
+Running as SYSTEM
+Building in workspace C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\test2
+[test2] $ cmd.exe /C '""C:\Program Files\apache-maven-3.8.1\bin\mvn.cmd"' test -Dtest=avtorizationpage && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.example:Keeper:jar:1.0-SNAPSHOT
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-failsafe-plugin @ line 48, column 25
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 77, column 25
+[WARNING] 'build.pluginManagement.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin io.qameta.allure:allure-maven @ line 110, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------------< org.example:Keeper >-------------------------
+[INFO] Building Keeper 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Keeper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Keeper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Keeper ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\test2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Keeper ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ Keeper ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running avtorizationpage
+июн. 24, 2021 5:37:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+START TEST
+START TEST
+START TEST
+START TEST
+START TEST
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.754 s - in avtorizationpage
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.043 s
+[INFO] Finished at: 2021-06-24T17:38:08+03:00
+[INFO] ------------------------------------------------------------------------
+[test2] $ cmd /c call C:\WINDOWS\TEMP\jenkins6498838674648745973.bat
+
+C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\test2>allure report 
+"allure" ­Ґ пў«пҐвбп ў­гваҐ­­Ґ© Ё«Ё ў­Ґи­Ґ©
+Є®¬ ­¤®©, ЁбЇ®«­пҐ¬®© Їа®Ја ¬¬®© Ё«Ё Ї ЄҐв­л¬ д ©«®¬.
+
+C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\test2>exit 9009 
+Build step 'Выполнить команду Windows' marked build as failure
+Unpacking https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.0.1/allure-2.0.1.zip to C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation\2.0.1 on Jenkins
+ERROR: Step ‘Allure Report’ aborted due to exception: 
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.0.1/allure-2.0.1.zip
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getHeaderField(Unknown Source)
+	at java.net.URLConnection.getHeaderFieldLong(Unknown Source)
+	at java.net.URLConnection.getContentLengthLong(Unknown Source)
+	at java.net.URLConnection.getContentLength(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getContentLength(Unknown Source)
+	at org.jvnet.robust_http_client.RetryableHttpStream.<init>(RetryableHttpStream.java:90)
+Caused: java.io.IOException: Server returned HTTP response code: 403 for URL: https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.0.1/allure-2.0.1.zip
+	at sun.reflect.GeneratedConstructorAccessor115.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at org.jvnet.robust_http_client.RetryableHttpStream.getStream(RetryableHttpStream.java:98)
+	at org.jvnet.robust_http_client.RetryableHttpStream.<init>(RetryableHttpStream.java:91)
+	at org.jvnet.robust_http_client.RetryableHttpStream.<init>(RetryableHttpStream.java:74)
+	at hudson.ProxyConfiguration.getInputStream(ProxyConfiguration.java:331)
+	at hudson.FilePath.installIfNecessaryFrom(FilePath.java:1020)
+Caused: java.io.IOException: Failed to install https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.0.1/allure-2.0.1.zip to C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation\2.0.1
+	at hudson.FilePath.installIfNecessaryFrom(FilePath.java:1034)
+	at hudson.FilePath.installIfNecessaryFrom(FilePath.java:947)
+	at hudson.tools.DownloadFromUrlInstaller.performInstallation(DownloadFromUrlInstaller.java:78)
+	at hudson.tools.InstallerTranslator.getToolHome(InstallerTranslator.java:70)
+	at hudson.tools.ToolLocationNodeProperty.getToolHome(ToolLocationNodeProperty.java:109)
+	at hudson.tools.ToolInstallation.translateFor(ToolInstallation.java:222)
+	at ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation.forNode(AllureCommandlineInstallation.java:118)
+	at ru.yandex.qatools.allure.jenkins.tools.AllureCommandlineInstallation.forNode(AllureCommandlineInstallation.java:33)
+	at ru.yandex.qatools.allure.jenkins.utils.BuildUtils.setUpTool(BuildUtils.java:39)
+	at ru.yandex.qatools.allure.jenkins.AllureReportPublisher.getCommandline(AllureReportPublisher.java:353)
+	at ru.yandex.qatools.allure.jenkins.AllureReportPublisher.generateReport(AllureReportPublisher.java:303)
+	at ru.yandex.qatools.allure.jenkins.AllureReportPublisher.perform(AllureReportPublisher.java:231)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:21)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:808)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:757)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:701)
+	at hudson.model.Run.execute(Run.java:1936)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:100)
+	at hudson.model.Executor.run(Executor.java:433)
+Finished: FAILURE
