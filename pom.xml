@@ -106,8 +106,13 @@
                     <groupId>io.qameta.allure</groupId>
                     <artifactId>allure-maven</artifactId>
                     <version>2.9</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-maven</artifactId>
+                    <version>2.9</version>
                     <configuration>
-                        <reportVersion>2.14.0</reportVersion>
+                        <reportVersion>2.4</reportVersion>
                     </configuration>
                 </plugin>
 
@@ -143,6 +148,11 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>${allure-junit4.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-report-builder</artifactId>
+            <version>2.1</version>
         </dependency>
 
     </dependencies>
